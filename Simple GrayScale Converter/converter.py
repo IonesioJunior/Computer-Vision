@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-_author__ == "Ionesio Junior"
+__author__ = "Ionesio Junior"
 
 
 
@@ -61,3 +61,5 @@ if __name__ == "__main__":
 	plotHistogramGraphic(img,gray)
 	for i in range(4):
 		plotValuesAvarageGraphic(valuesMatrix,i)
+	
+	cv2.imwrite('gray_scale_image.jpg',gray)
