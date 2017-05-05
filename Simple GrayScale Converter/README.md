@@ -8,13 +8,13 @@ In this folder have grayscale converter algorithm inplementation in C++ and Pyth
 
 '''
 
-<p align="center"><img src = "/example.jpg" width = "300"></p>
-<p align="center"><img src = "gray_scale_image.jpg" width = "300"></p>
+<p align="center"><img src = "example.jpg" width = "500"></p>
+<p align="center"><img src = "gray_scale_image.jpg" width = "500"></p>
 
-''
+'''
 
 ## Statistical Graphics
    When the code is executed, it will generate some statistical graphs.These charts represent the distribution / value of the pixels
 
 ## Authors
-	* **Ionésio Junior**
+* **Ionésio Junior**
