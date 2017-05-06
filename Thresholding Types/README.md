@@ -9,12 +9,10 @@
 and change to 255 other values.
 
 
-<p allign = "center">
-<div class="container">
+<div margin=10 class="container">
 <img src = './Results/binary.jpg' height = 300 width = 300>
 <p>binary threshold result</p>
-<div class="container">
 <img src = 'http://docs.opencv.org/2.4/_images/Threshold_Tutorial_Theory_Binary.png' height = 300 width = 300>
 <p>Opencv image binary thresholding operation</p>
 </div>
-</p>
+
