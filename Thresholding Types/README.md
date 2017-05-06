@@ -4,15 +4,17 @@
 
 ## Types of Thresholding
 
-### Binary Thresholding type
-  This thresholding algorithm change all pixel values greater than the threshold to 0 
-and change to 255 other values.
+In this repository you will find the following thresholding algorithms:
 
+```
+- BinaryThresholding
+- InvertedBinaryThresholding
+- Truncate
+- ThresholdingToZero
+- InvertedThresholdingToZero
 
-<div margin=10 class="container">
-<img src = './Results/binary.jpg' height = 300 width = 300>
-<p>binary threshold result</p>
-<img src = 'http://docs.opencv.org/2.4/_images/Threshold_Tutorial_Theory_Binary.png' height = 300 width = 300>
-<p>Opencv image binary thresholding operation</p>
-</div>
+```
 
+## Authors
+
+* **Ionésio Junior** 
