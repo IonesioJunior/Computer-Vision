@@ -8,10 +8,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/core/core.hpp>
 
-/*bool checkNeighbors(const cv::Mat &img,uchar *ptr){
-	
-}*/
-void Test(cv::Mat &img){
+void removePepperNoise(cv::Mat &img){
 	for(int y = 2 ; y < img.rows - 2;y++){
 		uchar **ptrs = (uchar**) calloc(5,sizeof(uchar*));
 		
@@ -57,12 +54,15 @@ int main(int argc,char** argv){
 		while(1){
 			cv::Mat frame;
 			cap >> frame;
+			//Filter some noises
 			cv::medianBlur(frame,frame,7);
 			cv::cvtColor(frame,frame,CV_BGR2GRAY);
+			//get image edges
 			cv::Laplacian(frame,frame,CV_8U,5);
+			//generate binary images
 			cv::threshold(frame,frame,80,255,1);
-			Test(frame);
-			cv::imshow("Test",frame);
+			removePepperNoise(frame);
+			cv::imshow("Result",frame);
 			cv::waitKey(1);
 		}
 	}
