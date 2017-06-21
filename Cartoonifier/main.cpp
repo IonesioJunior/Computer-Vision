@@ -1,3 +1,7 @@
+/*
+* @author Ionesio Junior
+*/
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>
